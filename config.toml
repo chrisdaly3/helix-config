@@ -1,0 +1,37 @@
+theme        = "monokai_pro_octagon"
+
+### EDITOR ###
+[editor]
+line-number  = "relative"
+cursorcolumn = true
+bufferline   = "multiple"
+color-modes  = true
+
+[editor.statusline]
+left         = ["position", "separator", "spacer", "mode","spacer","separator","spinner"]
+center       = ["file-name","separator", "version-control"]
+right        = ["file-modification-indicator", "workspace-diagnostics","separator", "file-type"]
+separator    = "❖"
+mode.normal  = "NORM"
+mode.insert  = "INSIDE"
+mode.select  = "SELECT"
+
+[editor.lsp]
+snippets         = false
+
+
+[editor.cursor-shape]
+insert       = "underline"
+select       = "hidden"
+
+### KEYS ###
+[keys.normal]
+# window movement
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"
+
+# buffer movement
+C-b = "goto_previous_buffer"
+C-n = "goto_next_buffer"
